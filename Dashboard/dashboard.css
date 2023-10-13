@@ -112,7 +112,7 @@ button.btn.btn-primary:hover {
 #left-menu ul li a i {
     font-size: 22px;
     text-align: center;
-    color: beige;
+    color: rgb(255, 255, 255);
     width: 35px;
     height: 35px;
     display: inline-block;
@@ -147,7 +147,7 @@ button.btn.btn-primary:hover {
 }
 
 #left-menu ul li.active a i {
-    background-color: #0e9aee;
+    /* background-color: #0e9aee; */
     color: #fff;
 }
 

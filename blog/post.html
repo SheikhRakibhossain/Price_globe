@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Form</title>
+    <!-- Include Bootstrap CSS (you may need to update the path) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container py-6">
+    <h1 class="mt-4">Create A Blog Blog</h1>
+
+    <!-- Blog Post Form -->
+    <form>
+        <div class="form-group">
+            <label for="postTitle">Title</label>
+            <input type="text" class="form-control" id="postTitle" placeholder="Enter the title">
+        </div>
+        <div class="form-group">
+          <label for="postContent">Content</label>
+          <textarea id="postContent" name="postContent"></textarea>
+      </div>
+        <div class="form-group">
+            <label for="postTags">Tags</label>
+            <input type="text" class="form-control" id="postTags" placeholder="Enter tags, separated by commas">
+        </div>
+        <div class="form-group">
+            <label for="postImage">Featured Image</label>
+            <input type="file" class="form-control-file" id="postImage">
+        </div>
+        <button type="submit" class="btn btn-primary">Publish</button>
+    </form>
+</div>
+
+<!-- Include Bootstrap JS (you may need to update the path) -->
+<script src="https://cdn.tiny.cloud/1/s5u8cl96xp7vi54qp5jkzkno3t0m1ilwz6vnuog3mjvev7rv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  tinymce.init({
+      selector: "#postContent",  // The ID of your textarea
+      height: 400,  // Adjust the height as needed
+      plugins: "link image lists",
+      toolbar: "bold italic alignleft aligncenter alignright bullist numlist link image",
+  });
+</script>
+
+</body>
+</html>
